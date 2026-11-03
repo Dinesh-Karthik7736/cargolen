@@ -1,0 +1,20 @@
+{
+  "name": "cargolens",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --configLoader runner --host 0.0.0.0",
+    "build": "vite build --configLoader runner",
+    "preview": "vite preview --configLoader runner --host 0.0.0.0",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.118.0",
+    "@vitejs/plugin-react": "4.7.0",
+    "lucide-react": "0.468.0",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "vite": "6.4.5"
+  }
+}

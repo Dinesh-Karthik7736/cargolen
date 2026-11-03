@@ -1,0 +1,65 @@
+{
+  "SHP-24811": {
+    "quality": "clean digital PDFs",
+    "expected_cross_document_result": {
+      "invoice_total_matches_line_sum": true,
+      "gross_weight_matches_all_documents": false,
+      "package_count_matches_all_documents": true,
+      "intentional_mismatch": "Packing list says 3165 kg; invoice and bill of lading say 3120 kg."
+    },
+    "invoice": {
+      "supplier_name": "Company B Industrial Co.",
+      "invoice_number": "CBI-INV-2026-8841",
+      "invoice_date": "2026-10-14",
+      "currency": "USD",
+      "incoterm": "FOB Yantian, China",
+      "package_count": 120,
+      "gross_weight_kg": 3120,
+      "net_weight_kg": 2940,
+      "container_numbers": "MSCU 482091-3",
+      "line_items": [
+        {
+          "description": "LED panel light, 40 W, cool white",
+          "hsn_code": "9405.42",
+          "quantity": 2400,
+          "unit_price": 6.8,
+          "line_total": 16320
+        }
+      ],
+      "invoice_total": 16320
+    },
+    "packing_list": { "package_count": 120, "gross_weight_kg": 3165, "net_weight_kg": 2940 },
+    "bill_of_lading": { "package_count": 120, "gross_weight_kg": 3120, "container_numbers": "MSCU 482091-3" }
+  },
+  "SHP-24812": {
+    "quality": "image-only scans with mild skew, faded print, blur, and scan noise",
+    "expected_cross_document_result": {
+      "invoice_total_matches_line_sum": true,
+      "gross_weight_matches_all_documents": true,
+      "package_count_matches_all_documents": true
+    },
+    "invoice": {
+      "supplier_name": "Company C Flow Systems AB",
+      "invoice_number": "CCF-INV-2026-2106",
+      "invoice_date": "2026-10-12",
+      "currency": "EUR",
+      "incoterm": "CIF Nhava Sheva, India",
+      "package_count": 24,
+      "gross_weight_kg": 1460,
+      "net_weight_kg": 1220,
+      "container_numbers": "TGHU 773020-8",
+      "line_items": [
+        {
+          "description": "Stainless steel ball valve, DN50",
+          "hsn_code": "8481.80",
+          "quantity": 180,
+          "unit_price": 42.5,
+          "line_total": 7650
+        }
+      ],
+      "invoice_total": 7650
+    },
+    "packing_list": { "package_count": 24, "gross_weight_kg": 1460, "net_weight_kg": 1220 },
+    "bill_of_lading": { "package_count": 24, "gross_weight_kg": 1460, "container_numbers": "TGHU 773020-8" }
+  }
+}
